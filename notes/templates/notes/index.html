@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Add Note Form -->
+<div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 mb-8">
+    {% include 'notes/partials/note_form.html' %}
+</div>
+
+<!-- Notes List -->
+<div id="notes-list" class="space-y-4">
+    {% for note in notes %}
+    {% include 'notes/partials/note.html' %}
+    {% endfor %}
+</div>
+{% endblock %}
