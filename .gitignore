@@ -1,0 +1,9 @@
+*.pyc
+__pycache__/
+db.sqlite3
+staticfiles/
+.env
+.railway
+node_modules/
+theme/static_src/node_modules/
+theme/static/css/dist/styles.css.map
